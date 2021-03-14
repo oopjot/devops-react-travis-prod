@@ -1,8 +1,8 @@
 service:
   docker
 
-before-install:
-  - docker build oopjot/pizza-app
+before_install:
+  - docker build -t oopjot/pizza-app -f Dockerfile .
 
 script:
   - docker run oopjot/pizza-app yarn test
