@@ -5,4 +5,7 @@ before_install:
   - docker build -t oopjot/pizza-app -f Dockerfile .
 
 script:
-  - docker run oopjot/pizza-app yarn test
+  - docker run oopjot/pizza-app npm run test
+
+# after_success:
+#   - docker build -t oopjot/pizza-app .
