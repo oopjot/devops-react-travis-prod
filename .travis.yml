@@ -6,5 +6,5 @@ services:
   docker
 
 script:
-  - docker build -f Dockerfile.dev -t pizza-dev .
-  - docker build -f Dockerfile -t pizza .
+  - docker build -f Dockerfile.dev -t oopjot/pizza-app-dev .
+  - docker build -f Dockerfile -t oopjot/pizza-app .
