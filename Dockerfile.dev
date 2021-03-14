@@ -1,0 +1,7 @@
+FROM node:alpine AS builder
+WORKDIR /opt/pizza-app
+COPY package.json .
+RUN yarn install
+COPY . .
+RUN yarn start
+EXPOSE 3000
